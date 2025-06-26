@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vocaloids - Início</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 60%
+    transform: translateY(-50%);
+  }
+
+  #carouselVocaloids {
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="alert alert-info text-center m-0 py-2">
+  Bem-vindo ao mundo dos Vocaloids! 🎤 Conheça os personagens, músicas e curiosidades.
+</div>
+<div class="container-fluid px-0">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width: 100%">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Vocaloids</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Personagens</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+    <br>
+    <br>
+  <nav aria-label="breadcrumb" style="width: 100%" class="mb-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Início</li>
+    </ol>
+  </nav>
+<!-- Carrossel -->
+<div id="carouselVocaloids" class="carousel slide container" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="img/HatsuneMikuSekai.png" class="d-block mx-auto img-fluid" alt="Miku" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/Rin.png" class="d-block mx-auto img-fluid" alt="Rin" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/Len.png" class="d-block mx-auto img-fluid" alt="Len" style="max-height: 300px; object-fit: contain;">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselVocaloids" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselVocaloids" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+  <!-- Button Group -->
+  <div class="container mt-4 text-center">
+    <div class="btn-group" role="group" aria-label="Navegação entre Vocaloids">
+      <button type="button" class="btn btn-outline-primary">Hatsune Miku</button>
+      <button type="button" class="btn btn-outline-success">Kagamine Rin</button>
+      <button type="button" class="btn btn-outline-warning">Kagamine Len</button>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="container mt-4">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <!-- Card Miku -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Miku.png" class="card-img-top img-fluid mx-auto d-block" alt="Hatsune Miku" style="max-height: 300px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Hatsune Miku <span class="badge bg-primary">Popular</span></h5>
+          <p class="card-text">Ícone mundial da música virtual, Miku é a primeira Vocaloid desenvolvida pela Crypton Future Media.</p>
+          <a href="#" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Rin -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/KagamineRen.png" class="card-img-top img-fluid mx-auto d-block" alt="Kagamine Rin" style="max-height: 300px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Kagamine Rin <span class="badge bg-warning text-dark">Energia</span></h5>
+          <p class="card-text">Gêmea de Len, Rin tem músicas agitadas e é muito querida pelos fãs de Vocaloid.</p>
+          <a href="#" class="btn btn-warning">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Len -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Kagaminelen.png" class="card-img-top img-fluid mx-auto d-block" alt="Kagamine Len" style="max-height: 300px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Kagamine Len <span class="badge bg-success">Destaque</span></h5>
+          <p class="card-text">Len é conhecido por sua voz expressiva e músicas emocionantes.</p>
+          <a href="#" class="btn btn-success">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Accordion -->
+  <div class="container mt-5">
+    <h2 class="mb-3">Curiosidades</h2>
+    <div class="accordion" id="curiosidades">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="cur1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
+            Como os Vocaloids funcionam?
+          </button>
+        </h2>
+        <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#curiosidades">
+          <div class="accordion-body">
+            Eles utilizam síntese de voz para cantar músicas criadas por usuários, com base em bancos de voz pré-gravados.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="cur2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
+            Quem é a Vocaloid mais popular?
+          </button>
+        </h2>
+        <div id="c2" class="accordion-collapse collapse" data-bs-parent="#curiosidades">
+          <div class="accordion-body">
+            Hatsune Miku é considerada a mais famosa, com milhares de músicas e apresentações ao vivo em holograma.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    Site de Vocaloids &copy; 2025 – Projeto escolar de Desenvolvimento de Sistemas
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

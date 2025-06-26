@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exemplo IW</title>
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<link rel="icon" type="image/x-icon" href="img/icone.ico">
+		<link rel="stylesheet" href="mystyle.css">
+		<style>
+			body {
+				background-color: powderblue;
+			}
+			h1 {
+				color: red;
+				font-family: arial black, tahoma, arial;
+				font-style: italic;
+			}
+			p {
+				color: blue;
+			}
+			.titulo { /* Classe de css  */
+				color: darkblue;
+			}
+			ul ul {
+				list-style-type: "\1FAE0";
+			}
+			.romano {
+				list-style-type: upper-roman;
+			}
+			#carro {
+				/*
+				width: 200px;
+				height: 250px;
+				
+				width: 40%;
+				height: 40%;
+				*/
+				width: 20%;
+			}
+			mark {
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body> <!-- Comentário   -->
+		<h1>Exemplo de texto</h1>
+		<p><i>Este</i> é <b>um parágrafo</b>.</p>
+		<h1 style="color:darkgreen;">Listas</h1>
+		<ul>
+			<li><u>Coffee</u></li>
+			<ul>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ul>
+			<li>Tea</li>
+			<ol>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol>
+			<li>Milk</li>
+		</ul>
+		<ol class="romano">
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Milk</li>
+		</ol>
+		<dl>
+			<dt>Coffee</dt>
+			<dd>black hot drink</dd>
+			<dt>Milk</dt>
+			<dd>white <mark>cold</mark> drink</dd>
+		</dl>
+		<h1 class="titulo">Imagem</h1>
+		<img id="carro" src="img/gol_power.webp" alt="Carro, Gol Power, vermelho">
+	</body>
+</html>

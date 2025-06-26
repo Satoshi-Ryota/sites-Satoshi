@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exemplo IW</title>
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<link rel="icon" type="image/x-icon" href="img/icone.ico">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilo.css">
+		<style>
+			.cinza {
+				background-color: #ccc;
+				border: 1px solid #000;
+			}
+		</style>
+	</head>
+	<body> <!-- Comentário   -->
+		<header>
+			<h2>Bootstrap</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#sor">Sorocaba</a></li>
+					<li><a href="index_velho.html">Outra</a></li>
+					<li><a href="bootstrap1.html">Bootstrap</a></li>
+					<li>
+						<a href="https://www.infowester.com" target="_blank">
+							Infowester
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<article>
+				<button type="button" class="btn btn-primary">Primary</button>
+				<br>
+				<a class="btn btn-secondary" href="#" role="button">Link</a>
+				<!-- usando o container normal -->
+				<div class="row">
+					<div class="col cinza m-1">
+						Primeira coluna
+					</div>
+					<div class="col cinza m-1">
+						Segunda coluna
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4 cinza m-1">
+						Primeira coluna
+					</div>
+					<div class="col-sm-12 col-md-5 cinza m-1">
+						Segunda coluna
+					</div>
+					<div class="col-sm-12 col-md-2 cinza m-1">
+						Terceira coluna
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4 cinza m-1">
+						Primeira coluna
+					</div>
+					<div class="col-sm-12 col-md-5 cinza m-1">
+						Segunda coluna
+					</div>
+					<div class="col-sm-12 col-md-5 cinza m-1">
+						Terceira coluna
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+				</div>
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn btn-primary">Left</button>
+					<button type="button" class="btn btn-warning">Middle</button>
+					<a href="#" class="btn btn-secondary">Middle</a>
+					<button type="button" class="btn btn-danger">Right</button>
+				</div>
+				<div style="--bs-breadcrumb-divider: '\\';" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="#">Library</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Data</li>
+					</ol>
+				</div>
+				<h3>Badge</h3>
+				<div>
+					<button type="button" class="btn btn-primary position-relative shadow">
+						Inbox
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded bg-danger">
+							99+
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</button>
+					<button type="button" class="btn btn-primary position-relative ms-4">
+						Inbox
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+							99+
+							<span class="visually-hidden">unread messages</span>
+						</span>
+					</button>
+				</div>
+				<div class="alert alert-warning alert-dismissible fade show  mt-1" role="alert">
+					A simple warning alert—check it out!
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+				<h3>Acordion</h3>
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Accordion Item #1
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Accordion Item #2
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Accordion Item #3
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3>Card</h3>
+				<div class="card shadow" style="width: 18rem;">
+					<img src="img/rtx5090.webp" class="card-img-top" style="width: 90%; margin: 5%; border-radius: 6px" alt="...">
+					<div class="card-body">
+							<div class="accordion" id="accordionCard">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCard1" aria-expanded="false" aria-controls="collapseCard1">
+        Vocaloids
+      </button>
+    </h2>
+    <div id="collapseCard1" class="accordion-collapse collapse" data-bs-parent="#accordionCard">
+      <div class="accordion-body">
+        <strong>Hatsune Miku</strong><br>é uma vocaloid
+      </div>
+    </div>
+  </div>
+</div>
+				</div>
+				</div>
+				<br>
+				<br>
+				<table class="table table-primary table-hover" style="border: solid 2px blue">
+				  <thead>
+					<tr>
+					  <th scope="col">#</th>
+					  <th scope="col">First</th>
+					  <th scope="col">Last</th>
+					  <th scope="col">Handle</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <th scope="row">1</th>
+					  <td>Mark</td>
+					  <td>Otto</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <th scope="row">2</th>
+					  <td>Jacob</td>
+					  <td>Thornton</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <th scope="row">3</th>
+					  <td>John</td>
+					  <td>Doe</td>
+					  <td>@social</td>
+					</tr>
+				  </tbody>
+				  <tfoot>
+				  
+				  </tfoot>
+				</table>
+				<h3> imagem fluída
+				</h3>
+				<img src="img/gol_power.webp" class="img-fluid img-thumbnail">
+			</article>
+		</section>
+
+		<footer>
+			<p>Footer</p>
+		</footer>
+		
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
